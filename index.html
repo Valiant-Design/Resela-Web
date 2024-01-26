@@ -42,10 +42,10 @@
                         Be the first to profit from seamless reselling when we launch!
                     </p>
   
-                    <form onsubmit="myfunc(event)" action="" class="waistlist__form" id="waistlist-form">
+                    <form name="contact-form" onsubmit="myfunc(event)" action="" class="waistlist__form" id="waistlist-form">
                        <div class="waitlist-group">
                           <div class="waitlist-box">
-                             <input type="text" name="business_name" class="waitlist-input" id="name" required placeholder="Business Name">
+                             <input type="text" name="business_name"  class="waitlist-input" id="name" required placeholder="Business Name">
                           </div>
   
                           <div class="waitlist-box">
@@ -58,6 +58,7 @@
                        </div>  
                           
                     </form>
+                    <span id="msg"></span>
                  </div>
             </div>
         </section>
@@ -195,25 +196,27 @@
  </section>
 
  <section class="big-waitform">
-    <div class="big-waitform-title">
+   <div class="big-waitform-title">
        <div class="container">
-          <p class="title-header">You're few seconds away  from <span class="highlight"> </span> making extra income !</p>
+          <p class="title-header">You're few seconds away  from making extra income !</p>
           <p class="title-paragraph">Join the 250 affiliate marketers waiting in line</p>
        </div>
 
 
-       <div class="form-container">
+      <div class="form-container">
                       
-       <form onsubmit="myfunc(event)" action="">
+       <form name="submit-to-google-sheet" onsubmit="myfunc(event)" action="">
           <div class="form">
             <input type="text" id="name" name="business_name" class="input" required placeholder="Business Name">
             <input type="email" id="email_id" name="user_email" class="input" required placeholder="example@gmail.com">
           </div>
           <button value="submit" type="submit" id="waitlist-button" class="form-container-button">Join the waitlist</button>
+
+          <span id="msg-2"></span>
          
        </form>
-       </div>
-    </div>
+      </div>
+   </div>
     
  </section>
  <div id="waitlist-bottom-circle">
@@ -303,34 +306,35 @@
                 Be the first to profit from seamless reselling when we launch!
              </p>
              
-             <form  onsubmit="myfunc(event)" action="" class="waistlist__form" id="waistlist-form">
-                <div class="waitlist-group">
-                   <div class="waitlist-box">
-                      <input type="text" name="business_name" class="waitlist-input" id="name" required placeholder="Business Name">
-                   </div>
+             <form name="contact-form-2" onsubmit="myfunc(event)" action="" class="waistlist__form" id="waistlist-form">
+               <div class="waitlist-group">
+                  <div class="waitlist-box">
+                     <input type="text" name="business_name" class="waitlist-input" id="name" required placeholder="Business Name">
+                  </div>
 
-                   <div class="waitlist-box">
-                      <input type="email" name="user_email" class="waitlist-input" id="email-id" required placeholder="Email">
-                   </div>
-                   
-                   <button value="submit" type="submit" id="waitlist-button" class="waitlist-input button">
-                     Join the waitlist 
-                   </button>
-                </div>  
-                
+                  <div class="waitlist-box">
+                     <input type="email" name="user_email" class="waitlist-input" id="email_id" required placeholder="Email">
+                  </div>
+
+                  <button value="submit" type="submit" id="waitlist-button" class="waitlist-input button">
+                    Join the waitlist 
+                  </button>
+               </div>  
+               <span id="msg-3"></span>  
              </form>
+
           </div>
        </div>
        
        <div class="attachment-image">
           <div class="attachment-extended">
              <div class="attachment-phone">
-                <img src="images/phone.png" alt="">
+               <a href="tel:(+234) 70 685 754 45"><img src="images/phone.png" alt=""></a>
              </div>
              <div class="attachment-text">
                 <h3>Need more information ?</h3>
                 <p style="font-weight: lighter;">Talk to a Resela Agent for free</p>
-                <span>(+234) 70 685 754 45</span>
+                <a class="footer__social-link" href="tel:+234 808 289 5378"><span>(+234) 70 685 754 45</span></a>
              </div>
              
           </div>
@@ -355,30 +359,32 @@
        
        <div class="footer-links">
           <ul>
-             <li><a href="#">About Us</a></li>
-             <li><a href="#">The Resell Revolution</a></li>
-             <li><a href="#">Community</a></li>
+             <li><a href="#about">About Us</a></li>
+             <li><a href="#revolution">The Resell Revolution</a></li>
+             <li><a href="#community">Community</a></li>
           </ul>
        </div>
        <div class="footer-links">
           <ul>
-             <li><a href="#"><span class="merchant">Merchant Registration</span></a></li>
-             <li><a href="#">Affiliate Sign up</a></li>
-             <li><a href="#">Blogs</a></li>
+             <li><a href="https://resela-one.vercel.app/"><span class="merchant">Merchant Registration</span></a></li>
+             <li><a href="#affiliates">Affiliate Sign up</a></li>
+             <li><a href="#blogs">Blogs</a></li>
           </ul>
        </div>
        <div class="footer-links">
           <ul>
-             <li><a href="#">How to sell</a></li>
-             <li><a href="#">Affiliate Sign up</a></li>
-             <li><a href="#">Blogs</a></li>
+             <li><a href="#sell">How to sell</a></li>
+             <li><a href="#affiliates">Affiliate Sign up</a></li>
+             <li><a href="#blogs">Blogs</a></li>
           </ul>
        </div>
        <div class="footer-links">
           <ul>
              <div class="social-links">
                 <i class="ri-twitter-line"></i>
-                <i class="ri-instagram-line"></i>
+                <a href="https://www.instagram.com/resela.official?igsh=MWdxb29zdzNseHpsMA==" target="_blank" class="footer__social-link">
+                  <i class="ri-instagram-line"></i>
+               </a>
                 <i class="ri-facebook-fill"></i>
              </div>
           </ul>
@@ -388,7 +394,7 @@
     </div>
 
     <section class="footer-extention-three">
-       <p>&copy; KWE4 Africa Venture Studio <span style="font-weight: lighter;">2023 - 2026</span></p>
+       <p>&copy; KWE4 Africa Venture Studio <span style="font-weight: lighter;">2023</span></p>
     </section>
     
  </section>
@@ -398,6 +404,55 @@
 </div>
    
 
+
+<script>
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbx12xErEVTyINHoH7IPfFzHN0_37xTFgQWyHSHxO3D_kN8cJIRaKcXdg0TUiGYUUIJZ/exec'
+   const form = document.forms['submit-to-google-sheet']
+   const form_1 = document.forms['contact-form']
+   const form_2 = document.forms['contact-form-2']
+   const msg = document.getElementById("msg")
+   const msg_1 = document.getElementById("msg-2")
+   const msg_2 = document.getElementById("msg-3")
+ 
+   form_1.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form_1)})
+       .then(response => {
+         msg.innerHTML = "Info sent successfully"
+         setTimeout(function () {
+            msg.innerHTML = ""
+         }, 5000)
+         form_1.reset()
+       })
+       .catch(error => console.error('Error!', error.message))
+      })
+
+   form.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       .then(response => {
+         msg_1.innerHTML = "Info sent successfully"
+         setTimeout(function () {
+            msg_1.innerHTML = ""
+         }, 5000)
+         form.reset()
+       })
+       .catch(error => console.error('Error!', error.message))
+   })
+
+   form_2.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form_2)})
+        .then(response => {
+         msg_2.innerHTML = "Info sent successfully"
+         setTimeout(function () {
+            msg_2.innerHTML = ""
+         }, 5000)
+         form_2.reset()
+       })
+       .catch(error => console.error('Error!', error.message))
+      })
+</script>
 
 
 
