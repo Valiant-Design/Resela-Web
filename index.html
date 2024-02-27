@@ -402,10 +402,24 @@
 <div class="scroll-progress">
  <div></div>
 </div>
+
+<!--============= LOADER ===============-->
+<div class="loader"></div> 
    
 
 
 <script>
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+ });
+ 
    const scriptURL = 'https://script.google.com/macros/s/AKfycbx12xErEVTyINHoH7IPfFzHN0_37xTFgQWyHSHxO3D_kN8cJIRaKcXdg0TUiGYUUIJZ/exec'
    const form = document.forms['submit-to-google-sheet']
    const form_1 = document.forms['contact-form']
